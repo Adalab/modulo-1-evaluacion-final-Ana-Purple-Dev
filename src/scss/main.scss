@@ -8,6 +8,9 @@
 @import "layout/header";
 @import "layout/footer";
 
+:root {
+  font-family: "Roboto", sans-serif;
+}
 .body {
   min-height: 100vh;
 }
@@ -29,8 +32,32 @@
     line-height: 3.44rem;
     text-transform: uppercase;
     text-shadow: $textShadowHero;
+    margin-bottom: 30px;
   }
   &__text {
-    font-family: "Roboto", sans-serif;
+    margin-bottom: 50px;
+  }
+  &__icon {
+    background-color: $whiteColor;
+    margin-bottom: 50px;
+    width: 38px;
+    height: 37px;
+    border-radius: 50%;
+  }
+}
+
+.sectionTwo {
+  background-color: $whiteColor;
+  display: flex;
+  flex-direction: column;
+  &__blueText {
+    color: $colorTextBlue;
+    font-size: 14px;
+    margin-top: 62px;
+    line-height: 30px;
+  }
+  &__title {
+    font-family: $titleFont;
+    font-size: 24px;
   }
 }
