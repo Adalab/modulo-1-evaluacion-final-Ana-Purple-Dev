@@ -1,12 +1,36 @@
-
-
 // @import 'components/code';
 // @import 'components/links';
 // @import 'layout/page';
 // @import 'pages/index';*/
 
-@import 'core/variables';
-@import 'core/reset';
-@import 'layout/header';
-@import 'layout/footer';
+@import "core/variables";
+@import "core/reset";
+@import "layout/header";
+@import "layout/footer";
 
+.body {
+  min-height: 100vh;
+}
+
+.hero {
+  background-image: url(../images/cover.jpeg);
+  background-position: center;
+  height: 543px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $whiteColor;
+  &__title {
+    font-family: $titleFont;
+    font-size: 2.62rem;
+    line-height: 3.44rem;
+    text-transform: uppercase;
+    text-shadow: $textShadowHero;
+  }
+  &__text {
+    font-family: "Roboto", sans-serif;
+  }
+}

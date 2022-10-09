@@ -1,17 +1,9 @@
-.header__nav{
-    background-color: $blueColor;
-    width: 38px;
-    height: 22px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hero{
-    background-image: url(../images/cover.jpeg);
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: auto;
-
+.header__nav {
+  background-color: $blueColor;
+  width: 38px;
+  height: 22px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
