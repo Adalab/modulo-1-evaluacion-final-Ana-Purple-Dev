@@ -24,7 +24,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   color: $whiteColor;
   &__title {
     font-family: $titleFont;
@@ -32,32 +33,99 @@
     line-height: 3.44rem;
     text-transform: uppercase;
     text-shadow: $textShadowHero;
-    margin-bottom: 30px;
+    margin: 300px 0px 10px 0px;
   }
   &__text {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
   &__icon {
     background-color: $whiteColor;
-    margin-bottom: 50px;
+    margin-bottom: 34px;
     width: 38px;
     height: 37px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .sectionTwo {
   background-color: $whiteColor;
-  display: flex;
-  flex-direction: column;
-  &__blueText {
-    color: $colorTextBlue;
-    font-size: 14px;
-    margin-top: 62px;
-    line-height: 30px;
+  height: 400px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 62px 15px 45px 15px;
+    &--blueText {
+      color: $colorTextBlue;
+      font-size: 14px;
+      line-height: 30px;
+    }
+    &--title {
+      font-family: $titleFont;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    &--text {
+      color: $colorTextP;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 26px;
+    }
+    &--button {
+      color: $orangeColor;
+      background-color: $whiteColor;
+      border: solid 2px $orangeColor;
+      border-radius: 22.5px;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 10px 25px;
+      width: 76px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  &__title {
-    font-family: $titleFont;
-    font-size: 24px;
+}
+.sectionThree {
+  background-color: $sectionThreeBg;
+  height: 624px;
+
+  &__container {
+    margin: 29px 15px 60px 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 290px;
+    grid-template-rows: 30px 93px 93px 93px 45px;
+    row-gap: 44px;
+    place-content: center;
+    &--title {
+      font-family: $titleFont;
+      font-size: 24px;
+    }
+    &--bold {
+      font-family: $titleFont;
+      line-height: 30px;
+    }
+    &--text {
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &--button {
+      color: $whiteColor;
+      background-color: $orangeColor;
+      border-radius: 22.5px;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 184px;
+      height: 45px;
+      border: none;
+    }
   }
 }
