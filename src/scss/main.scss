@@ -94,24 +94,29 @@
   height: 624px;
 
   &__container {
-    margin: 29px 15px 60px 15px;
+    margin: 0px 15px;
     text-align: center;
     display: grid;
-    grid-template-columns: 290px;
+    grid-auto-columns: 1fr;
     grid-template-rows: 30px 93px 93px 93px 45px;
+    place-items: center;
     row-gap: 44px;
-    place-content: center;
     &--title {
+      margin: 29px 0px 49px 0px;
       font-family: $titleFont;
       font-size: 24px;
     }
     &--bold {
       font-family: $titleFont;
       line-height: 30px;
+      width: 180px;
+      justify-items: center;
     }
     &--text {
       font-size: 18px;
       line-height: 30px;
+      width: 180px;
+      justify-items: center;
     }
     &--button {
       color: $whiteColor;
@@ -126,6 +131,7 @@
       width: 184px;
       height: 45px;
       border: none;
+      justify-items: center;
     }
   }
 }

@@ -1,1 +1,40 @@
+.footer {
+  background-color: $footerBg;
+  height: 465px;
+  position: relative;
+  &__container {
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $whiteColor;
 
+    &--arrow {
+      background-color: $whiteColor;
+      display: flex;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      top: -22.5px;
+    }
+    &--navSections {
+      margin: 65px 0px 30px 0px;
+      text-align: center;
+    }
+    &--navSocial {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+  }
+}
+.nav-link {
+  text-decoration: none;
+  list-style: none;
+  color: $whiteColor;
+  text-transform: uppercase;
+  line-height: 30px;
+}
