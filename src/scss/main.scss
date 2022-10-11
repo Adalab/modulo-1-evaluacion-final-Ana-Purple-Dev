@@ -163,16 +163,17 @@
 }
 .sectionThree {
   background-color: $sectionThreeBg;
-  height: 624px;
+  min-height: 624px;
   width: 100%;
   @media all and (min-width: 768px) {
-    height: 397px;
+    min-height: 397px;
   }
   @media all and (min-width: 1280px) {
-    height: 427px;
+    min-height: 427px;
   }
   &__container {
     margin: 0px 15px;
+    padding-top: 29px;
     text-align: center;
     display: grid;
     grid-auto-columns: 1fr;
@@ -182,12 +183,13 @@
     @media all and (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      row-gap: 38px;
+      margin: 0px 40px;
+      padding-top: 0;
     }
     @media all and (min-width: 1280px) {
+      row-gap: 20px;
     }
     &--title {
-      margin-top: 29px;
       font-family: $titleFont;
       font-size: 24px;
       line-height: 30px;
@@ -195,25 +197,32 @@
       @media all and (min-width: 768px) {
         grid-column: 2/3;
         grid-row: 1/2;
-        width: 450px;
+        width: 285px;
         font-size: 26px;
         line-height: 45px;
       }
       @media all and (min-width: 1280px) {
         font-size: 32px;
         line-height: 45px;
+        width: 360px;
       }
     }
     &--article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media all and(min-width: 1280px) {
+        min-height: 110px;
+        margin-bottom: 35px;
+      }
       &--bold {
         font-family: $titleFont;
         line-height: 30px;
-        width: 180px;
         justify-items: center;
+        text-align: center;
         @media all and (min-width: 768px) {
           font-size: 24px;
           line-height: 30px;
-          width: 350px;
           margin-bottom: 18px;
         }
       }
@@ -222,10 +231,11 @@
         line-height: 30px;
         width: 180px;
         justify-items: center;
+        text-align: center;
         @media all and (min-width: 768px) {
-          width: 212px;
           font-size: 20px;
           line-height: 30px;
+          width: 190px;
         }
         @media all and (min-width: 1280px) {
           width: 354px;
@@ -255,6 +265,7 @@
       }
       @media all and (min-width: 1280px) {
         width: 255px;
+        margin-bottom: 35px;
       }
     }
     &--button:hover {
@@ -268,7 +279,6 @@
   @media all and (min-width: 768px) {
     grid-column: 1/2;
     grid-row: 2/3;
-    margin-left: 38px;
     width: 210px;
   }
   @media all and (min-width: 1280px) {
