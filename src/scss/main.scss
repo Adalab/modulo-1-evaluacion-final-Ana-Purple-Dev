@@ -86,13 +86,6 @@
 
 .sectionTwo {
   background-color: $whiteColor;
-  height: 360px;
-  @media all and (min-width: 768px) {
-    height: 330px;
-  }
-  @media all and (min-width: 1280px) {
-    height: 360px;
-  }
   &__container {
     display: flex;
     flex-direction: column;
