@@ -2,6 +2,13 @@
   background-color: $footerBg;
   height: 465px;
   position: relative;
+  @media all and (min-width: 768px) {
+    height: 240px;
+  }
+  // @media all and (min-width: 1280px) {
+  //   height: 240px;
+  // }
+
   &__container {
     margin: 0px 15px;
     display: flex;
@@ -9,6 +16,13 @@
     justify-content: center;
     align-items: center;
     color: $whiteColor;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    @media all and (min-width: 1280px) {
+    }
 
     &--arrow {
       background-color: $whiteColor;
@@ -25,14 +39,47 @@
     &--navSections {
       margin: 65px 0px 30px 0px;
       text-align: center;
+      @media all and (min-width: 768px) {
+        text-align: start;
+        order: 1;
+        margin: 50px 0px 40px 0px;
+        width: 210px;
+      }
+      @media all and (min-width: 1280px) {
+        width: 161px;
+      }
     }
     &--navSocial {
       text-align: center;
       margin-bottom: 32px;
+      @media all and (min-width: 768px) {
+        text-align: start;
+        order: 2;
+        margin: 50px 39px 40px 0px;
+        width: 210px;
+      }
+      @media all and (min-width: 1280px) {
+        width: 159px;
+        margin: 50px 370px 40px 0px;
+      }
     }
-    &--text {
-      font-size: 14px;
-      line-height: 30px;
+    &--box {
+      @media all and (min-width: 768px) {
+        margin: 50px 0px 40px 39px;
+        width: 210px;
+      }
+      @media all and (min-width: 1280px) {
+        width: 159px;
+        margin: 50px 0px 40px 370px;
+      }
+      &--text {
+        font-size: 14px;
+        line-height: 30px;
+        @media all and (min-width: 768px) {
+          text-align: start;
+          order: 0;
+        }
+      }
     }
   }
 }

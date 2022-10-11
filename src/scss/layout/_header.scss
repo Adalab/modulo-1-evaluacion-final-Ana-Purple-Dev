@@ -6,4 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media all and (min-width: 768px) {
+    width: 42px;
+    height: 44px;
+  }
+  @media all and (min-width: 1280px) {
+    width: 44px;
+    height: 44px;
+  }
 }
