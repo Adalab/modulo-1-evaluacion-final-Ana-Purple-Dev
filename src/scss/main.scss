@@ -18,7 +18,8 @@
 .hero {
   background-image: url(../images/cover.jpeg);
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -27,6 +28,7 @@
   justify-content: center;
   align-items: center;
   color: $whiteColor;
+
   &__title {
     font-family: $titleFont;
     font-size: 2.62rem;
@@ -34,9 +36,31 @@
     text-transform: uppercase;
     text-shadow: $textShadowHero;
     margin: 300px 0px 10px 0px;
+    @media all and (min-width: 768px) {
+      font-size: 80px;
+      line-height: 106px;
+      margin: 384px 0px 24px 0px;
+    }
+    @media all and (min-width: 1280px) {
+      font-size: 100px;
+      line-height: 132px;
+      word-spacing: 100vw;
+      margin-top: 384px;
+    }
   }
+
   &__text {
     margin-bottom: 35px;
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+      max-width: 340px;
+      margin-bottom: 0px;
+    }
+    @media all and (min-width: 1280px) {
+      max-width: 730px;
+      margin-bottom: 34px;
+    }
   }
   &__icon {
     background-color: $whiteColor;
@@ -47,6 +71,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media all and (min-width: 768px) {
+      margin-bottom: 45px;
+      width: 42.5px;
+      height: 45px;
+    }
+    @media all and (min-width: 1280px) {
+      margin-bottom: 13px;
+      width: 45px;
+      height: 45px;
+    }
   }
 }
 
@@ -57,6 +91,12 @@
     display: flex;
     flex-direction: column;
     margin: 62px 15px 45px 15px;
+    @media all and (min-width: 768px) {
+      margin: 37px 39px 0px 39px;
+    }
+    @media all and (min-width: 1280px) {
+      margin: 65px 275px 0px 275px;
+    }
     &--blueText {
       color: $colorTextBlue;
       font-size: 14px;
@@ -68,12 +108,24 @@
       font-size: 24px;
       margin-bottom: 20px;
       text-transform: capitalize;
+      @media all and (min-width: 768px) {
+        font-size: 26px;
+        margin-bottom: 27px;
+      }
+      @media all and (min-width: 1280px) {
+        font-size: 32px;
+        margin-bottom: 32px;
+      }
     }
     &--text {
       color: $colorTextP;
       font-size: 18px;
       line-height: 30px;
       margin-bottom: 26px;
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+        margin-bottom: 27px;
+      }
     }
     &--button {
       color: $orangeColor;
@@ -88,6 +140,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media all and (min-width: 768px) {
+        width: 91px;
+      }
+      @media all and (min-width: 1280px) {
+        width: 160px;
+      }
     }
   }
 }
