@@ -31,7 +31,8 @@
       height: 45px;
       position: absolute;
       top: -22.5px;
-      box-shadow: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
       @media all and (min-width: 768px) {
         margin: auto;
         left: 0;
@@ -78,6 +79,7 @@
       &--text {
         font-size: 14px;
         line-height: 30px;
+        text-align: center;
         @media all and (min-width: 768px) {
           text-align: start;
           order: 0;

@@ -86,16 +86,22 @@
 
 .sectionTwo {
   background-color: $whiteColor;
-  height: 400px;
+  height: 360px;
+  @media all and (min-width: 768px) {
+    height: 330px;
+  }
+  @media all and (min-width: 1280px) {
+    height: 360px;
+  }
   &__container {
     display: flex;
     flex-direction: column;
     margin: 62px 15px 45px 15px;
     @media all and (min-width: 768px) {
-      margin: 37px 39px 0px 39px;
+      margin: 37px 39px 60px 39px;
     }
     @media all and (min-width: 1280px) {
-      margin: 65px 275px 0px 275px;
+      margin: 65px 275px 60px 275px;
     }
     &--blueText {
       color: $colorTextBlue;
@@ -140,6 +146,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
       @media all and (min-width: 768px) {
         width: 91px;
       }
@@ -147,12 +154,23 @@
         width: 160px;
       }
     }
+    &--button:hover {
+      border: solid 2px turquoise;
+      color: turquoise;
+      transition: background-color 0.5s;
+    }
   }
 }
 .sectionThree {
   background-color: $sectionThreeBg;
   height: 624px;
-
+  width: 100%;
+  @media all and (min-width: 768px) {
+    height: 397px;
+  }
+  @media all and (min-width: 1280px) {
+    height: 427px;
+  }
   &__container {
     margin: 0px 15px;
     text-align: center;
@@ -161,24 +179,58 @@
     grid-template-rows: 30px 93px 93px 93px 45px;
     place-items: center;
     row-gap: 44px;
+    @media all and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 38px;
+    }
+    @media all and (min-width: 1280px) {
+    }
     &--title {
       margin-top: 29px;
       font-family: $titleFont;
       font-size: 24px;
       line-height: 30px;
       text-transform: capitalize;
+      @media all and (min-width: 768px) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 450px;
+        font-size: 26px;
+        line-height: 45px;
+      }
+      @media all and (min-width: 1280px) {
+        font-size: 32px;
+        line-height: 45px;
+      }
     }
-    &--bold {
-      font-family: $titleFont;
-      line-height: 30px;
-      width: 180px;
-      justify-items: center;
-    }
-    &--text {
-      font-size: 18px;
-      line-height: 30px;
-      width: 180px;
-      justify-items: center;
+    &--article {
+      &--bold {
+        font-family: $titleFont;
+        line-height: 30px;
+        width: 180px;
+        justify-items: center;
+        @media all and (min-width: 768px) {
+          font-size: 24px;
+          line-height: 30px;
+          width: 350px;
+          margin-bottom: 18px;
+        }
+      }
+      &--text {
+        font-size: 18px;
+        line-height: 30px;
+        width: 180px;
+        justify-items: center;
+        @media all and (min-width: 768px) {
+          width: 212px;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        @media all and (min-width: 1280px) {
+          width: 354px;
+        }
+      }
     }
     &--button {
       color: $whiteColor;
@@ -194,6 +246,50 @@
       height: 45px;
       border: none;
       justify-items: center;
+      margin-bottom: 60px;
+
+      @media all and (min-width: 768px) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 210px;
+      }
+      @media all and (min-width: 1280px) {
+        width: 255px;
+      }
     }
+    &--button:hover {
+      background-color: turquoise;
+      transition: background-color 0.5s;
+    }
+  }
+}
+
+.articleOne {
+  @media all and (min-width: 768px) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 38px;
+    width: 210px;
+  }
+  @media all and (min-width: 1280px) {
+  }
+}
+.articleTwo {
+  @media all and (min-width: 768px) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 210px;
+  }
+  @media all and (min-width: 1280px) {
+  }
+}
+.articleThree {
+  @media all and (min-width: 768px) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-right: 38px;
+    width: 210px;
+  }
+  @media all and (min-width: 1280px) {
   }
 }
