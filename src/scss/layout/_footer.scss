@@ -20,6 +20,7 @@
       height: 45px;
       position: absolute;
       top: -22.5px;
+      box-shadow: rgba(0, 0, 0, 0.5);
     }
     &--navSections {
       margin: 65px 0px 30px 0px;
@@ -29,11 +30,12 @@
       text-align: center;
       margin-bottom: 32px;
     }
+    &--text {
+      font-size: 14px;
+    }
   }
 }
 .nav-link {
-  text-decoration: none;
-  list-style: none;
   color: $whiteColor;
   text-transform: uppercase;
   line-height: 30px;
